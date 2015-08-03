@@ -1,9 +1,13 @@
 {
   "name": "generator-mint-ionic",
-  "version": "1.0.0",
-  "author": "choiks14 <choiks14@mint-soft.com>",
-  "description": "ionic generator",
+  "version": "1.0.2",
+  "description": "Yeoman generator",
   "dependencies": {},
+  "author": {
+    "name": "choi kangsik",
+    "email": "choiks14@mint-soft.com",
+    "url": "https://github.com/choiks14"
+  },
   "devDependencies": {
     "bower": "^1.4.1",
     "cordova": "~5.1.1",
