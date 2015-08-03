@@ -42,7 +42,6 @@ If you do not have / want gulp globally installed, you can run `npm run gulp` in
 By running just `gulp`, we start our development build process, consisting of:
 
 - compiling, concatenating, auto-prefixing of all `.scss` files required by `app/styles/main.scss`
-- creating `vendor.js` file from external sources defined in `./vendor.json`
 - linting all `*.js` files `app/scripts`, see `.jshintrc` for ruleset
 - automatically inject sources into `index.html` so we don't have to add / remove sources manually
 - build everything into `.tmp` folder (also gitignored)
@@ -58,22 +57,23 @@ gulp build
 
 #### Emulate
 ```bash
-gulp build --arg 'android -lcs --device'
+gulp emulate --arg 'android -lcs --device'
 ```
 
 
 #### Run
 ```bash
-gulp build --arg 'android -lcs --device'
+cordova platform add android
+gulp run --arg 'android -lcs --device'
 ```
 
 ### splash screens and icons
 
-Replace `splash.png` and `icon.png` inside `/resources`. Then run `ionic resources`. If you only want to regenerate icons or splashs, you can run `gulp icon` or `gulp splash` shorthand.
+```bash
+gulp resource
+```
 
 ## Changelog
-
-
 
 #### 1.0.0
 
