@@ -1,18 +1,30 @@
 {
   "name": "generator-mint-ionic",
-  "version": "1.0.3",
+  "version": "1.0.8",
+  "license": "MIT",
   "description": "Yeoman generator",
-  "dependencies": {},
   "author": {
     "name": "choi kangsik",
     "email": "choiks14@mint-soft.com",
     "url": "https://github.com/choiks14"
   },
-  "devDependencies": {
+  "repository": "choiks14/generator-mint-ionic",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "main": "app/index.js",
+  "files": [
+    "generators"
+  ],
+  "dependencies": {
     "yeoman-generator": "^0.19.0",
     "chalk": "^1.0.0",
     "yosay": "^1.0.2",
     "lodash": "~3.10.0"
+  },
+
+  "devDependencies": {
+    
   },
   "scripts": {
     "gulp": "./node_modules/.bin/gulp"
