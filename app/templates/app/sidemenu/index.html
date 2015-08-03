@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title><%= appName %></title>
+
+    <!-- build:vendor_css(www) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/ionic/css/ionic.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:app_css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+
+  <body ng-app="<%= appName %>">
+    <ion-nav-view></ion-nav-view>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- build:vendor_js(www) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ionic/js/ionic.js"></script>
+    <script src="bower_components/ionic/js/ionic-angular.js"></script>
+    <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:app_js(.tmp) scripts/app.js -->
+    <!-- app -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config/constant.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <!-- endbuild -->
+    
+  </body>
+</html>

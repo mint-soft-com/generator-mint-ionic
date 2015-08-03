@@ -1,0 +1,14 @@
+{
+  "dev":{
+    "ENV": {
+      "name":"dev",
+      "apiEndpoint":"http://localhost"
+    }  
+  },
+  "prod":{
+    "ENV": {
+      "name":"prod",
+      "apiEndpoint":"http://localhost"
+    }  
+  }
+}
