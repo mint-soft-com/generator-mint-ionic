@@ -1,16 +1,16 @@
 module.exports = function($, usehtml) {
-  var dist = 'www/',
-    src = 'app/',
-    tmp = '.tmp/',
-    res = "res/",
+  var dist = 'www',
+    src = 'app',
+    tmp = '.tmp',
+    res = "res",
     appName = "<%= ngModulName %>";
 
   var config = {
     appName:appName,
     src:{
       directory:"./"+src,
-      styles:[src+"/styles/**/*.scss"],
-      scripts:[src+"/scripts/**/*.js"],
+      styles:[src+"/styles/**/*"],
+      scripts:[src+"/scripts/**/*"],
       images:[src+"/images/**/*"],
       index:src+"/index.html",
       views:[src+"/views/**/*.html"]
