@@ -1,6 +1,6 @@
 {
   "name": "generator-mint-ionic",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "description": "Yeoman generator",
   "author": {
@@ -8,7 +8,10 @@
     "email": "choiks14@mint-soft.com",
     "url": "https://github.com/choiks14"
   },
-  "repository": "mint-soft-com/generator-mint-ionic",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mint-soft-com/generator-mint-ionic.git"
+  },
   "keywords": [
     "yeoman-generator"
   ],
