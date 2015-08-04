@@ -20,15 +20,13 @@
     "generators"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.19.0",
     "chalk": "^1.0.0",
-    "yosay": "^1.0.2",
-    "lodash": "~3.10.0"
+    "lodash": "~3.10.0",
+    "underscore.string": "^3.1.1",
+    "yeoman-generator": "^0.19.0",
+    "yosay": "^1.0.2"
   },
-
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "scripts": {
     "gulp": "./node_modules/.bin/gulp"
   }

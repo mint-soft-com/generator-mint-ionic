@@ -3,11 +3,13 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var path = require('path');
+var _ = require("underscore.string");
 
 var appPath = path.join(process.cwd(), 'app');
 
 module.exports = yeoman.generators.Base.extend({
   initializing: function() {
+    // _ = require("underscore.string");
     this.pkg = require('../package.json');
   },
 
@@ -66,7 +68,7 @@ module.exports = yeoman.generators.Base.extend({
         type: 'input',
         name: 'appId',
         message: 'The app id?',
-        default: 'com.' + this._.classify(this.userName).toLowerCase() + '.' + this._.classify(this.appName).toLowerCase()
+        default: 'com.' + _.classify(this.userName).toLowerCase() + '.' + _.classify(this.appName).toLowerCase()
       }], function(props) {
         this.appId = props.appId;
         done();
@@ -78,11 +80,11 @@ module.exports = yeoman.generators.Base.extend({
 
     setup: function() {
       var param = {
-        appName: this._.underscored(this.appName),
+        appName: _.underscored(this.appName),
         userName: this.userName,
         userEmail: this.userEmail,
         widgetId: this.appId,
-        ngModulName: this._.classify(this.appName) 
+        ngModulName: _.classify(this.appName) 
       };
 
       var setupFiles = require("./setup.json").files;
@@ -99,11 +101,11 @@ module.exports = yeoman.generators.Base.extend({
 
     projectfiles: function() {
       var param = {
-        appName: this._.underscored(this.appName),
+        appName: _.underscored(this.appName),
         userName: this.userName,
         userEmail: this.userEmail,
         widgetId: this.appId,
-        ngModulName: this._.classify(this.appName) ,
+        ngModulName: _.classify(this.appName) ,
         title: this.appName
       };
 
