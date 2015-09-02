@@ -1,12 +1,12 @@
 {
   "name": "generator-mint-ionic",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "description": "Yeoman generator",
   "author": {
-    "name": "choi kangsik",
-    "email": "choiks14@mint-soft.com",
-    "url": "https://github.com/choiks14"
+    "name": "mint-soft team",
+    "email": "ceo@mint-soft.com",
+    "url": "https://github.com/mint-soft-com"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   ],
   "main": "app/index.js",
   "files": [
-    "generators"
+    "app"
   ],
   "dependencies": {
     "chalk": "^1.1.0",
